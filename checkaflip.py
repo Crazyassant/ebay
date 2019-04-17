@@ -76,7 +76,6 @@ async def on_message(message):
         current_price, current_image_url, current_name, completed_price =  site_search(keyword)
         embed = discord.Embed(color=3447003)
         embed.set_thumbnail(url=current_image_url)
-        embed.set_footer(text="CheckAFlip Bot made by @TaquitoSlayer")
         embed.add_field(name="Listing name example", value="{}".format(current_name), inline=False)
         embed.add_field(name="Completed/Sold listing pricing avg.", value="${}".format(completed_price), inline=True)
         embed.add_field(name="Active listings price avg.", value="${}".format(current_price), inline=True)
